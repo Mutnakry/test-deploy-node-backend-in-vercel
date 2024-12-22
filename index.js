@@ -34,6 +34,11 @@ app.post('/projects', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+  });
+  
+
 // Get all projects
 app.get('/projects', (req, res) => {
     const query = 'SELECT * FROM projects';
